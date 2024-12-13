@@ -1,0 +1,293 @@
+/* ALLGEMEIN */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans serif;
+}
+
+body {
+    background: #FFF9E9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    background: #b7ddb4;
+}
+
+#header_left img {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 10px 25px;
+}
+
+nav {
+    display: grid;
+    justify-items: center;
+
+}
+
+nav ul {
+    padding: 30px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: #b31240;
+    font-size: 2em;
+    display: block;
+}
+
+nav a:hover {
+    color: #1e1e1e;
+}
+
+.burger {
+    display: none;
+}
+
+/* MAIN */
+.desktop-bild {
+    width: 100%;
+}
+
+.mobile-bild {
+    display: none;
+}
+
+#ueber-mich-mobile{
+   display: none;
+}
+
+.home-bild{
+    position: relative;
+}
+
+.home-bild-text{
+    position: absolute;
+    left: 3vw;
+    top: 50%;
+    z-index: 1;
+    font-size: 1em;
+    max-width: 450px;
+    text-align: center;
+}
+
+.home-bild-text img{
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+/* IMPRESSUM */
+
+.bold {
+    font-weight: bold;
+}
+
+.impressum h1{
+    margin-top: 10px;
+}
+
+.impressum, .datenschutz, .urheberrecht{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.urheberrecht p{
+    margin-bottom: 40px;
+}
+
+/* KONTAKT */
+form {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 20px;
+
+}
+
+input, textarea {
+    background: #FFFCF5;
+    max-width: 300px;
+}
+
+#submitter{
+    padding: 5px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+.error {
+    border: solid #b31240;
+}
+
+/* GALERIE */
+.main-header{
+    text-align: center;
+    margin: 15px 0 20px 0;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+
+}
+
+.gallery img{
+    width: 20vw;
+}
+
+.gallery img.zoom{
+    width: 40vw;
+    z-index: 1;
+}
+
+/* ÜBER MICH */
+
+.ueber-mich{
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+.ueber-mich hr{
+    width: 220px;
+    margin: 8px auto 15px auto;
+}
+.ueber-mich h1{
+    margin-top: 15px;
+}
+
+.ueber-mich p{
+    margin:5px auto 15px auto;
+}
+
+.ueber-mich a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 20px 0 20px 0;
+    left: 50%;
+    border-radius: 25px;
+    max-width: 250px;
+    color: #1e1e1e;
+    font-size: 1.5em;
+    border: #b31240 solid;
+}
+
+
+/* FOOTER */
+footer {
+    display: grid;
+    background: #b7ddb4;
+    padding: 30px 0;
+    grid-template-columns: 50% 50%;
+    margin-top: auto;
+    width: 100%;
+}
+
+footer a {
+    padding: 10px;
+    font-size: 1em;
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+footer p {
+    padding: 10px;
+    font-size: 1em;
+    color: #1e1e1e;
+    text-align: right;
+    font-family: "Lexend mega", sans serif;
+}
+
+
+/* SCREEN-SIZE */
+@media screen and (max-width: 1023px) {
+    /* ALLGEMEIN */
+    nav{
+        display: none;
+        grid-column: 1/4;
+        grid-row: 2;
+        grid-template-columns: 50% 50%;
+    }
+
+    nav.show{
+        display: blocK;
+
+    }
+
+    .burger {
+        display: block;
+        width: 50px;
+        padding: 5px;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+    }
+
+    /* MAIN */
+
+    #ueber-mich{
+        display: none;
+    }
+
+    .mobile-bild {
+        display: initial;
+        width: 100vw;
+    }
+
+    .desktop-bild {
+        display: none;
+    }
+
+    #ueber-mich-mobile{
+        display: block;
+    }
+
+    #uebermich-mobile a{
+        display: inline-block;
+    }
+
+    .home-bild-text{
+        display: none;
+    }
+    /* GALERIE */
+
+    .gallery{
+        grid-template-columns: 70vw;
+        grid-column-gap: 0;
+        grid-row-gap: 30px;
+        justify-content: center;
+        margin-bottom: 40px;
+
+    }
+
+    .gallery img{
+        width: 70vw;
+    }
+
+    .gallery img.zoom{
+        width: 70vw;
+    }
+
+}
