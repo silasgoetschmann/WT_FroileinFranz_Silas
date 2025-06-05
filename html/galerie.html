@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel = "stylesheet" href = "/website/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Mega:wght@100..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+  <div id="header_left">
+    <a href="main.html" title="Link zu Homepage"><img src="/website/images/logo.svg" alt="Logo" class="logo"></a>
+  </div>
+  <nav id="topnav">
+    <ul>
+      <li id="ueber-mich"><a href="ueber-mich.html" title="ÜBER MICH">ÜBER MICH</a></li>
+      <li><a href="kontakt.html" title="KONTAKT">KONTAKT</a></li>
+      <li><a href="galerie.html" title="GALERIE">GALERIE</a></li>
+    </ul>
+  </nav>
+  <div id="header_right">
+    <img src="/website/images/burger.svg" alt="Navigation-Icon" class="burger" onclick="navclick()">
+  </div>
+</header>
+
+<main>
+  <h1 class="main-header">MEINE GALERIE</h1>
+  <div class="gallery">
+    <img id="img-1" onclick="zoom(id)" src="/website/images/clown(1).jpg" alt="Bild von Fröilein Franz">
+    <img id="img-2" onclick="zoom(id)" src="/website/images/clown(2).jpg" alt="Bild von Fröilein Franz">
+    <img id="img-3" onclick="zoom(id)" src="/website/images/clown(3).jpg" alt="Bild von Fröilein Franz">
+    <img id="img-4" onclick="zoom(id)" src="/website/images/clown(4).jpg" alt="Bild von Fröilein Franz">
+    <img id="img-5" onclick="zoom(id)" src="/website/images/clown(5).jpg" alt="Bild von Fröilein Franz">
+    <img id="img-6" onclick="zoom(id)" src="/website/images/clown(6).jpg" alt="Bild von Fröilein Franz">
+    <img id="img-7" onclick="zoom(id)" src="/website/images/clown(7).jpg" alt="Bild von Clownschuhen">
+    <img id="img-8" onclick="zoom(id)" src="/website/images/clown(8).jpg" alt="Bild von Fröilein Franz">
+    <img id="img-9" onclick="zoom(id)" src="/website/images/clown(9).jpg" alt="Bild von Fröilein Franz">
+  </div>
+</main>
+<footer>
+  <a href="impressum-dsg.html" title="Impressum">IMPRESSUM UND DATENSCHUTZ</a>
+  <p>©WEBDESIGN GÖTSCHMANN</p>
+</footer>
+<script src="/website/js/gallery.js"></script>
+<script src="/website/js/nav.js"></script>
+</body>
+</html>
